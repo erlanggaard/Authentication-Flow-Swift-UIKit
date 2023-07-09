@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22113.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22089.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="onboarding" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="Montra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciD-CX-N91">
+                                <rect key="frame" x="20" y="742" width="353" height="56"/>
+                                <color key="backgroundColor" name="Violet20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="aIi-Yf-tp1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="baseForegroundColor" name="Violet100"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ny-ne-JEj">
+                                <rect key="frame" x="20" y="670" width="353" height="56"/>
+                                <color key="backgroundColor" name="Violet100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="bse-kP-88R"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Z2x-U1-ySz">
+                                <rect key="frame" x="0.0" y="32" width="393" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IML-1J-GzY">
+                                    <size key="itemSize" width="393" height="551"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboarding_cell" id="Mza-Fz-AL6" customClass="OnboardingCollectionViewCell" customModule="Montra" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="33.666666666666664" width="393" height="551"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dsa-r8-CUd">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="551"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_onboarding_1" translatesAutoresizingMaskIntoConstraints="NO" id="EVd-5M-LLH">
+                                                    <rect key="frame" x="30" y="30" width="333" height="333"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="EVd-5M-LLH" secondAttribute="height" multiplier="1:1" id="p3l-Yz-4Kz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gcv-rJ-bbi">
+                                                    <rect key="frame" x="49" y="403" width="295" height="131"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCB-Ps-csu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="295" height="76.666666666666671"/>
+                                                            <string key="text">Gain total control 
+of your money</string>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                            <color key="textColor" name="Dark50"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become your own money manager and make every cent count" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyf-it-eJ2">
+                                                            <rect key="frame" x="0.0" y="92.666666666666686" width="295" height="38.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                            <color key="textColor" name="Light20"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gcv-rJ-bbi" firstAttribute="leading" secondItem="dsa-r8-CUd" secondAttribute="leading" constant="49" id="0OG-He-Bvq"/>
+                                                <constraint firstItem="gcv-rJ-bbi" firstAttribute="top" secondItem="EVd-5M-LLH" secondAttribute="bottom" constant="40" id="40b-oG-FO3"/>
+                                                <constraint firstItem="EVd-5M-LLH" firstAttribute="leading" secondItem="dsa-r8-CUd" secondAttribute="leading" constant="30" id="H9u-E6-R32"/>
+                                                <constraint firstAttribute="trailing" secondItem="gcv-rJ-bbi" secondAttribute="trailing" constant="49" id="hhs-QC-KEZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="EVd-5M-LLH" secondAttribute="trailing" constant="30" id="o1a-Pe-nqI"/>
+                                                <constraint firstItem="EVd-5M-LLH" firstAttribute="top" secondItem="dsa-r8-CUd" secondAttribute="top" constant="30" id="sB0-C9-qld"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="393" height="551"/>
+                                        <connections>
+                                            <outlet property="img_onboarding" destination="EVd-5M-LLH" id="s3G-7e-oNL"/>
+                                            <outlet property="subtitle" destination="kyf-it-eJ2" id="Azj-Bt-Z3i"/>
+                                            <outlet property="title" destination="yCB-Ps-csu" id="iZF-Rt-sxj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="iPH-Rx-bk5">
+                                <rect key="frame" x="20" y="624.33333333333337" width="353" height="25.666666666666629"/>
+                                <color key="pageIndicatorTintColor" red="0.93333333333333335" green="0.89803921568627454" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" name="Violet100"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ciD-CX-N91" firstAttribute="leading" secondItem="3ny-ne-JEj" secondAttribute="leading" id="1Nr-Vp-u0s"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iPH-Rx-bk5" secondAttribute="trailing" constant="20" id="5Df-aN-ZVi"/>
+                            <constraint firstItem="ciD-CX-N91" firstAttribute="trailing" secondItem="3ny-ne-JEj" secondAttribute="trailing" id="94U-an-H9y"/>
+                            <constraint firstItem="Z2x-U1-ySz" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="BJ1-oc-n4N"/>
+                            <constraint firstItem="ciD-CX-N91" firstAttribute="top" secondItem="3ny-ne-JEj" secondAttribute="bottom" constant="16" id="D8j-zX-xV2"/>
+                            <constraint firstItem="Z2x-U1-ySz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="KlJ-xO-kqI"/>
+                            <constraint firstItem="iPH-Rx-bk5" firstAttribute="bottom" secondItem="Z2x-U1-ySz" secondAttribute="bottom" id="TZM-Zl-Ftw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ciD-CX-N91" secondAttribute="trailing" constant="20" id="bI0-aS-ahA"/>
+                            <constraint firstItem="ciD-CX-N91" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="edA-L5-hSA"/>
+                            <constraint firstItem="Z2x-U1-ySz" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="32" id="qQy-lF-EvX"/>
+                            <constraint firstItem="3ny-ne-JEj" firstAttribute="top" secondItem="Z2x-U1-ySz" secondAttribute="bottom" constant="20" id="ssO-kW-nzj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ciD-CX-N91" secondAttribute="bottom" constant="20" id="w6s-dw-g0U"/>
+                            <constraint firstItem="iPH-Rx-bk5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="wHS-sU-4fN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLogin" destination="ciD-CX-N91" id="SGJ-0M-KXd"/>
+                        <outlet property="buttonSignUp" destination="3ny-ne-JEj" id="Mee-xV-utW"/>
+                        <outlet property="collectionView" destination="Z2x-U1-ySz" id="J0d-3i-RXq"/>
+                        <outlet property="pageControl" destination="iPH-Rx-bk5" id="4Rl-ah-tU6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122.90076335877862" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_onboarding_1" width="312" height="312"/>
+        <namedColor name="Dark50">
+            <color red="0.12941176470588237" green="0.13725490196078433" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light20">
+            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Violet100">
+            <color red="0.49803921568627452" green="0.23921568627450981" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Violet20">
+            <color red="0.93333333333333335" green="0.89803921568627454" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
