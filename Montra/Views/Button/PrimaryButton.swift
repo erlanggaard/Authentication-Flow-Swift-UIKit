@@ -12,7 +12,7 @@ public class PrimaryButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 16 {
         didSet {
-            update()
+            updateInspectable()
         }
     }
 
@@ -30,6 +30,12 @@ public class PrimaryButton: UIButton {
         setup()
     }
     
+    public override var isEnabled: Bool {
+        didSet {
+            updateInspectable()
+        }
+    }
+    
     func setup() {
 //        tintColor = UIColor.white
         setTitleColor(UIColor.white, for: .normal)
@@ -38,11 +44,12 @@ public class PrimaryButton: UIButton {
         let color = UIColor(named: "Violet100", in: Bundle(for: self.classForCoder), compatibleWith: nil)
         backgroundColor = color
         
-        update()
+        updateInspectable()
     }
     
-    func update() {
+    func updateInspectable() {
         layer.cornerRadius = cornerRadius
+        alpha = isEnabled ? 1.0 : 0.3
     }
     
 }

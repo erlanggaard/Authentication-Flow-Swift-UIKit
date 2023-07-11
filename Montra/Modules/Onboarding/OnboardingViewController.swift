@@ -33,16 +33,15 @@ class OnboardingViewController: UIViewController {
     }
 
     func setup() {
-        buttonSignUp.layer.cornerRadius = 16
-        buttonLogin.layer.cornerRadius = 16
-        
         collectionView.dataSource = self
         collectionView.delegate = self
         
         pageControl.currentPage = 0
         pageControl.numberOfPages = itemsOnboarding.count
-        
-        
+    }
+    
+    @IBAction func signUpButtonPressed(_ sender: Any) {
+        showSignUpViewController()
     }
 }
 
@@ -74,7 +73,7 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: screenWidth, height: height)
     }
     
-    // Mengatur jarak dalam section
+    // Mengatur jarak antar section
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }

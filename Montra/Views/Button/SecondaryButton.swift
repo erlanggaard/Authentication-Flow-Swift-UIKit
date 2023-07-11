@@ -12,7 +12,7 @@ public class SecondaryButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 16 {
         didSet {
-            update()
+            updateInspectable()
         }
     }
     
@@ -30,6 +30,12 @@ public class SecondaryButton: UIButton {
         setup()
     }
     
+    public override var isEnabled: Bool {
+        didSet {
+            updateInspectable()
+        }
+    }
+    
     func setup() {
         let bundle = Bundle(for: self.classForCoder)
         let textColor = UIColor(named: "Violet100", in: bundle , compatibleWith: nil)
@@ -39,11 +45,12 @@ public class SecondaryButton: UIButton {
         titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         backgroundColor = bgColor
         
-        update()
+        updateInspectable()
     }
     
-    func update() {
+    func updateInspectable() {
         layer.cornerRadius = cornerRadius
+        alpha = isEnabled ? 1.0 : 0.3
     }
 
 }
