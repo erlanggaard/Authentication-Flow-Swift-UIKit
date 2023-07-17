@@ -10,6 +10,7 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var passwordTextField: InputTextField!
+    @IBOutlet weak var agreeButton: CheckButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,10 @@ class SignUpViewController: UIViewController {
         setup()
     }
     
+    
+    @IBAction func agreeButtonPressed(_ sender: Any) {
+        agreeButton.isChecked = !agreeButton.isChecked
+    }
     
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
@@ -28,7 +33,6 @@ class SignUpViewController: UIViewController {
             self.passwordTextField.isSecureTextEntry = !self.passwordTextField.isSecureTextEntry
         }
     }
-    
 }
 
 extension UIViewController {

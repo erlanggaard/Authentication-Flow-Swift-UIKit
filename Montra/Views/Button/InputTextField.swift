@@ -10,7 +10,6 @@ import UIKit
 @IBDesignable
 public class InputTextField: UITextField {
     
-    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -18,6 +17,10 @@ public class InputTextField: UITextField {
     
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
+        setup()
+    }
+    
+    public override func prepareForInterfaceBuilder() {
         setup()
     }
 
@@ -34,10 +37,6 @@ public class InputTextField: UITextField {
     }
     @IBInspectable var leftImage: UIImage? = nil {
         didSet { updateInspectable() }
-    }
-    
-    public override func prepareForInterfaceBuilder() {
-        setup()
     }
     
     // Margin Image Right
