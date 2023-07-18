@@ -44,6 +44,11 @@ public class GhostButton: UIButton {
         layer.borderWidth = 1
         layer.borderColor = UIColor(named: "Light60", in: bundle, compatibleWith: nil)?.cgColor
         
+        let imageName = "flat-color-icons_google"
+        let image = UIImage(named: imageName, in: bundle, compatibleWith: nil)?.withRenderingMode(.alwaysOriginal)
+        setImage(image, for: .normal)
+
+        
 //        let color = UIColor(named: "Violet100", in: Bundle(for: self.classForCoder), compatibleWith: nil)
 //        backgroundColor = color
         

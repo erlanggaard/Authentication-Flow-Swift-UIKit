@@ -76,6 +76,7 @@ public class InputTextField: UITextField {
     
     private func setup() {
         let bundle = Bundle(for: self.classForCoder)
+        layer.masksToBounds = true
         
         layer.borderWidth = 1
         layer.borderColor = UIColor(named: "Light60", in: bundle, compatibleWith: nil)?.cgColor

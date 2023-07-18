@@ -82,14 +82,6 @@ extension OnboardingViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
-    
-    // Page Control Logic
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        if scrollView == self.collectionView {
-//            let page = scrollView.contentOffset.x / scrollView.frame.width
-//            pageControl.currentPage = Int(page)
-//        }
-//    }
 }
 
 extension OnboardingViewController: UICollectionViewDelegate {
