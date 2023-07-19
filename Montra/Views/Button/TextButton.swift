@@ -41,7 +41,7 @@ class TextButton: UIButton {
     func updateInspectable(state: UIControl.State = .normal) {
         let bundle = Bundle(for: self.classForCoder)
         let textColor = UIColor(named: "Violet100", in: bundle, compatibleWith: nil)!
-        let font = UIFont.systemFont(ofSize: 14, weight: .medium)
+        let font = UIFont.systemFont(ofSize: 18, weight: .semibold)
         
         setAttributedTitle(
             NSAttributedString(

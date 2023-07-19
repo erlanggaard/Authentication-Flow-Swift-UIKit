@@ -43,6 +43,10 @@ class OnboardingViewController: UIViewController {
     @IBAction func signUpButtonPressed(_ sender: Any) {
         showSignUpViewController()
     }
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        showLoginViewController()
+    }
 }
 
 extension OnboardingViewController: UICollectionViewDataSource {

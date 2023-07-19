@@ -14,4 +14,39 @@ extension UIViewController {
         present(alert, animated: true)
     }
     
+    func showOnboardingController() {
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "onboarding")
+        navigationController?.pushViewController(viewController, animated: true)
+        
+    }
+    
+    func showSignUpViewController() {
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+        let ViewController = storyboard.instantiateViewController(withIdentifier: "signUp")
+        
+        navigationController?.pushViewController(ViewController, animated: true)
+    }
+
+    func showLoginViewController() {
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let ViewController = storyboard.instantiateViewController(withIdentifier: "login")
+        
+        navigationController?.pushViewController(ViewController, animated: true)
+    }
+    
+    func showVerificationViewController() {
+        let storyboard = UIStoryboard(name: "Verification", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "verification")
+        
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func showForgotPasswordViewController() {
+        let storyboard = UIStoryboard(name: "ForgotPassword", bundle: nil)
+        let ViewController = storyboard.instantiateViewController(withIdentifier: "forgotPassword")
+        
+        navigationController?.pushViewController(ViewController, animated: true)
+    }
+    
 }

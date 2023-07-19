@@ -54,6 +54,11 @@ class SignUpViewController: UIViewController {
     }
     
     
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        showLoginViewController()
+    }
+    
+    
     @IBAction func signUpButtonPressed(_ sender: Any) {
         signUp()
     }
@@ -63,7 +68,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
     
     func setup() {
@@ -91,11 +96,3 @@ class SignUpViewController: UIViewController {
     }
 }
 
-extension UIViewController {
-    func showSignUpViewController() {
-        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
-        let ViewController = storyboard.instantiateViewController(withIdentifier: "signUp")
-        
-        navigationController?.pushViewController(ViewController, animated: true)
-    }
-}

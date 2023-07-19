@@ -20,10 +20,3 @@ class VerificationViewController: UIViewController {
     }
 }
 
-extension UIViewController {
-    func showVerificationViewController() {
-        let storyboard = UIStoryboard(name: "Verification", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "verification")
-        navigationController?.pushViewController(viewController, animated: true)
-    }
-}

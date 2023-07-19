@@ -23,11 +23,15 @@
 		624C36842A65A7F400924413 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C36832A65A7F400924413 /* TextButton.swift */; };
 		624CD5A62A5EEFA600364894 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CD5A52A5EEFA600364894 /* CheckButton.swift */; };
 		624CD5A82A5EF59600364894 /* GhostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CD5A72A5EF59600364894 /* GhostButton.swift */; };
+		627A97EA2A67A8D6008DB7CA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627A97E92A67A8D6008DB7CA /* Login.storyboard */; };
+		627A97EC2A67A8EA008DB7CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A97EB2A67A8EA008DB7CA /* LoginViewController.swift */; };
 		627D265E2A6039680056B08B /* UnderlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D265D2A6039680056B08B /* UnderlineButton.swift */; };
 		6288DF262A5AB71B008C78D9 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288DF252A5AB71B008C78D9 /* PrimaryButton.swift */; };
 		6288DF282A5ABBB8008C78D9 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288DF272A5ABBB8008C78D9 /* SecondaryButton.swift */; };
 		6288DF2C2A5AD807008C78D9 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6288DF2B2A5AD807008C78D9 /* Auth.storyboard */; };
 		6288DF2E2A5AD81D008C78D9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288DF2D2A5AD81D008C78D9 /* SignUpViewController.swift */; };
+		62929FB42A67BDA600230C0B /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */; };
+		62929FB62A67BDC700230C0B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */; };
 		62D865302A5C223400A9C69B /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8652F2A5C223400A9C69B /* InputTextField.swift */; };
 		62FEC3C82A66EEA50075FF57 /* Verification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FEC3C72A66EEA50075FF57 /* Verification.storyboard */; };
 		62FEC3CA2A66EED20075FF57 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FEC3C92A66EED20075FF57 /* VerificationViewController.swift */; };
@@ -73,11 +77,15 @@
 		624C36832A65A7F400924413 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		624CD5A52A5EEFA600364894 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		624CD5A72A5EF59600364894 /* GhostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostButton.swift; sourceTree = "<group>"; };
+		627A97E92A67A8D6008DB7CA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		627A97EB2A67A8EA008DB7CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		627D265D2A6039680056B08B /* UnderlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineButton.swift; sourceTree = "<group>"; };
 		6288DF252A5AB71B008C78D9 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		6288DF272A5ABBB8008C78D9 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		6288DF2B2A5AD807008C78D9 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		6288DF2D2A5AD81D008C78D9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
+		62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		62D8652F2A5C223400A9C69B /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		62FEC3C72A66EEA50075FF57 /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
 		62FEC3C92A66EED20075FF57 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
@@ -217,12 +225,48 @@
 		6288DF2A2A5AD7EE008C78D9 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				62929FAF2A67BC7A00230C0B /* SignUp */,
+				62929FB12A67BCE700230C0B /* Login */,
+				62929FB02A67BC8E00230C0B /* Verification */,
+				62929FB22A67BD1D00230C0B /* Forgot Password */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		62929FAF2A67BC7A00230C0B /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
 				6288DF2B2A5AD807008C78D9 /* Auth.storyboard */,
 				6288DF2D2A5AD81D008C78D9 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		62929FB02A67BC8E00230C0B /* Verification */ = {
+			isa = PBXGroup;
+			children = (
 				62FEC3C72A66EEA50075FF57 /* Verification.storyboard */,
 				62FEC3C92A66EED20075FF57 /* VerificationViewController.swift */,
 			);
-			path = Auth;
+			path = Verification;
+			sourceTree = "<group>";
+		};
+		62929FB12A67BCE700230C0B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				627A97E92A67A8D6008DB7CA /* Login.storyboard */,
+				627A97EB2A67A8EA008DB7CA /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		62929FB22A67BD1D00230C0B /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */,
+				62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */,
+			);
+			path = "Forgot Password";
 			sourceTree = "<group>";
 		};
 		62FEC3CB2A66F6C10075FF57 /* Extension */ = {
@@ -340,7 +384,9 @@
 			files = (
 				623D2D9E2A59B3A3002AFB4F /* LaunchScreen.storyboard in Resources */,
 				623D2D9B2A59B3A3002AFB4F /* Assets.xcassets in Resources */,
+				627A97EA2A67A8D6008DB7CA /* Login.storyboard in Resources */,
 				6288DF2C2A5AD807008C78D9 /* Auth.storyboard in Resources */,
+				62929FB42A67BDA600230C0B /* ForgotPassword.storyboard in Resources */,
 				62FEC3C82A66EEA50075FF57 /* Verification.storyboard in Resources */,
 				623D2D992A59B3A2002AFB4F /* Main.storyboard in Resources */,
 				623D2DC42A59B531002AFB4F /* Onboarding.storyboard in Resources */,
@@ -368,12 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627A97EC2A67A8EA008DB7CA /* LoginViewController.swift in Sources */,
 				62D865302A5C223400A9C69B /* InputTextField.swift in Sources */,
 				627D265E2A6039680056B08B /* UnderlineButton.swift in Sources */,
 				624C36842A65A7F400924413 /* TextButton.swift in Sources */,
 				624CD5A82A5EF59600364894 /* GhostButton.swift in Sources */,
 				62FEC3CD2A66F6D90075FF57 /* StringExtension.swift in Sources */,
 				623D2D962A59B3A2002AFB4F /* ViewController.swift in Sources */,
+				62929FB62A67BDC700230C0B /* ForgotPasswordViewController.swift in Sources */,
 				623D2D922A59B3A2002AFB4F /* AppDelegate.swift in Sources */,
 				623D2DC92A59E089002AFB4F /* Onboarding.swift in Sources */,
 				623D2D942A59B3A2002AFB4F /* SceneDelegate.swift in Sources */,

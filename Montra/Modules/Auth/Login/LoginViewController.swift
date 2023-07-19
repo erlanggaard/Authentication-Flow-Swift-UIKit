@@ -20,8 +20,16 @@ class LoginViewController: UIViewController {
     }
     
     
+    @IBAction func signUpButtonPressed(_ sender: Any) {
+        showSignUpViewController()
+    }
+    
+    @IBAction func forgotButtonPressed(_ sender: Any) {
+        showForgotPasswordViewController()
+    }
+    
     @IBAction func backButtonPressed(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     func setup() {
@@ -31,11 +39,3 @@ class LoginViewController: UIViewController {
     }
 }
 
-extension UIViewController {
-    func showLoginViewController() {
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let ViewController = storyboard.instantiateViewController(withIdentifier: "login")
-        
-        navigationController?.pushViewController(ViewController, animated: true)
-    }
-}
