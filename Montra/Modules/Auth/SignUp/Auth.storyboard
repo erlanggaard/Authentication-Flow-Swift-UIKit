@@ -97,16 +97,16 @@
                                 <state key="normal" title="Sign Up with Google" image="flat-color-icons_google"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="enT-DH-41n">
-                                <rect key="frame" x="80.000000000000014" y="617" width="233.33333333333337" height="32"/>
+                                <rect key="frame" x="80.000000000000014" y="617" width="233.33333333333337" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhY-m2-WNV">
-                                        <rect key="frame" x="0.0" y="0.0" width="190.33333333333334" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="190.33333333333334" height="31"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                         <color key="textColor" name="Light20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNX-IE-Xaj" customClass="UnderlineButton" customModule="Montra" customModuleProvider="target">
-                                        <rect key="frame" x="192.33333333333331" y="0.0" width="41" height="32"/>
+                                        <rect key="frame" x="192.33333333333331" y="0.0" width="41" height="31"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Login"/>
@@ -171,25 +171,25 @@
     </scenes>
     <designables>
         <designable name="BNX-IE-Xaj">
-            <size key="intrinsicContentSize" width="41" height="32"/>
+            <size key="intrinsicContentSize" width="41" height="31"/>
         </designable>
         <designable name="CaJ-2r-WJr">
-            <size key="intrinsicContentSize" width="30" height="34"/>
+            <size key="intrinsicContentSize" width="24" height="24"/>
         </designable>
         <designable name="Qdb-3G-u46">
-            <size key="intrinsicContentSize" width="172" height="32"/>
+            <size key="intrinsicContentSize" width="202" height="32"/>
         </designable>
         <designable name="TVy-EQ-aUL">
-            <size key="intrinsicContentSize" width="34.666666666666664" height="18.666666666666668"/>
+            <size key="intrinsicContentSize" width="66.666666666666671" height="18.666666666666668"/>
         </designable>
         <designable name="fkq-V1-DGk">
-            <size key="intrinsicContentSize" width="38" height="18.666666666666668"/>
+            <size key="intrinsicContentSize" width="70" height="18.666666666666668"/>
         </designable>
         <designable name="n79-68-iED">
-            <size key="intrinsicContentSize" width="62.333333333333336" height="17"/>
+            <size key="intrinsicContentSize" width="126.33333333333333" height="17"/>
         </designable>
         <designable name="vgb-5d-df9">
-            <size key="intrinsicContentSize" width="54" height="30"/>
+            <size key="intrinsicContentSize" width="66" height="34"/>
         </designable>
     </designables>
     <resources>

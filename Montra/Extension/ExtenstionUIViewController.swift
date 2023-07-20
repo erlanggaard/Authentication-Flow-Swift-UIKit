@@ -14,13 +14,6 @@ extension UIViewController {
         present(alert, animated: true)
     }
     
-    func showOnboardingController() {
-        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "onboarding")
-        navigationController?.pushViewController(viewController, animated: true)
-        
-    }
-    
     func showSignUpViewController() {
         let storyboard = UIStoryboard(name: "Auth", bundle: nil)
         let ViewController = storyboard.instantiateViewController(withIdentifier: "signUp")

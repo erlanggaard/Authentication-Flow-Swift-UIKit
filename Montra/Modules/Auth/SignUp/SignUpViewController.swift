@@ -28,27 +28,26 @@ class SignUpViewController: UIViewController {
     }
     
     func signUp() {
-//        guard let name = nameTextField.text, name.count > 3 else {
-//            showErrorAlert(message: "Name At Least Must Be More than 3 Characters")
-//
-//            return
-//        }
-//        guard let email = emailTextField.text, email.isEmail else {
-//            showErrorAlert(message: "Email is not valid, Please Check Again!")
-//            
-//            return
-//        }
-//        
-//        guard let password = passwordTextField.text, password.isStrongPassword else {
-//            showErrorAlert(message: "Password must have Minimum 8 characters at least 1 Alphabet and 1 Number")
-//            
-//            return
-//        }
-//        
-//        guard agreeButton.isChecked else {
-//            showErrorAlert(message: "Please check Terms of Service and Privacy Policy")
-//            return
-//        }
+        // Checking Name Format
+        guard let name = nameTextField.text, name.count >= 3 else {
+            showErrorAlert(message: "Name At Least Must Be More than 3 Characters")
+            return
+        }
+        // Checking Email Format
+        guard let email = emailTextField.text, email.isEmail else {
+            showErrorAlert(message: "Email is not valid, Please Check Again!")
+            return
+        }
+        // Checking Password Format
+        guard let password = passwordTextField.text, password.isStrongPassword else {
+            showErrorAlert(message: "Password must have Minimum 8 characters at least 1 Number")
+            return
+        }
+        // Checking Agree Button
+        guard agreeButton.isChecked else {
+            showErrorAlert(message: "Please check Terms of Service and Privacy Policy")
+            return
+        }
         
         showVerificationViewController()
     }
@@ -57,7 +56,6 @@ class SignUpViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: Any) {
         showLoginViewController()
     }
-    
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
         signUp()
