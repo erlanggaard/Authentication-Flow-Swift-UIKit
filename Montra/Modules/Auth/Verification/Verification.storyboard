@@ -18,42 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0G-yI-047">
-                                <rect key="frame" x="16" y="595.66666666666663" width="308" height="57.333333333333371"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-JY-al1" customClass="OtpTextField" customModule="Montra" customModuleProvider="target">
+                                <rect key="frame" x="16" y="233" width="212" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cg7-Bc-hcE"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usf-9k-EYO">
+                                <rect key="frame" x="16" y="326.66666666666669" width="337" height="57.333333333333314"/>
                                 <string key="text">We send verification code to your
-email brajaoma*****@gmail.com. You can
-check your inbox.</string>
+email user@gmail.com. You can check your inbox.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" name="Dark50"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEs-Lc-4oY" customClass="PrimaryButton" customModule="Montra" customModuleProvider="target">
-                                <rect key="frame" x="16" y="746" width="361" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="jTQ-PH-pE9"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Verify"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAd-5Q-AqK" customClass="UnderlineButton" customModule="Montra" customModuleProvider="target">
-                                <rect key="frame" x="16" y="669" width="283" height="31"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="I didn’t received the code? Send again"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IA1-PQ-mRz">
-                                <rect key="frame" x="16" y="557.66666666666663" width="52" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMG-mg-1n4">
+                                <rect key="frame" x="16.000000000000004" y="289" width="51.333333333333343" height="21.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <color key="textColor" name="Violet100"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 2 3 4 5 6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lct-tB-qYC">
-                                <rect key="frame" x="16" y="470.66666666666669" width="158.33333333333334" height="39"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ay6-MX-3yX" customClass="UnderlineButton" customModule="Montra" customModuleProvider="target">
+                                <rect key="frame" x="16" y="400" width="283" height="31"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I didn’t received the code? Send again"/>
+                                <connections>
+                                    <action selector="resendButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qWs-yX-OZ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-Pe-nUh" customClass="PrimaryButton" customModule="Montra" customModuleProvider="target">
+                                <rect key="frame" x="16" y="447" width="361" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="y9g-1D-aG6"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Verify"/>
+                                <connections>
+                                    <action selector="verifyButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MSf-43-DwA"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Verification Code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFe-m0-dv0">
-                                <rect key="frame" x="16" y="332.66666666666669" width="361" height="86"/>
+                                <rect key="frame" x="16" y="119" width="361" height="86"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,20 +68,22 @@ check your inbox.</string>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UAd-5Q-AqK" firstAttribute="top" secondItem="a0G-yI-047" secondAttribute="bottom" constant="16" id="AtE-3A-w04"/>
+                            <constraint firstItem="m1b-Pe-nUh" firstAttribute="trailing" secondItem="VFe-m0-dv0" secondAttribute="trailing" id="06z-aL-r0l"/>
                             <constraint firstItem="VFe-m0-dv0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Ax1-4x-P51"/>
-                            <constraint firstItem="a0G-yI-047" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="B4v-aB-8Qt"/>
-                            <constraint firstItem="IA1-PQ-mRz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="IWL-yd-D0d"/>
-                            <constraint firstItem="a0G-yI-047" firstAttribute="top" secondItem="IA1-PQ-mRz" secondAttribute="bottom" constant="16" id="LH6-OV-dij"/>
-                            <constraint firstItem="Lct-tB-qYC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="MbB-W1-Oqk"/>
-                            <constraint firstItem="EEs-Lc-4oY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="SKH-I7-4fa"/>
+                            <constraint firstItem="ay6-MX-3yX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Fd4-EA-KpG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Usf-9k-EYO" secondAttribute="trailing" constant="40" id="LKA-HX-kqv"/>
+                            <constraint firstItem="m1b-Pe-nUh" firstAttribute="leading" secondItem="VFe-m0-dv0" secondAttribute="leading" id="MTi-g0-yLd"/>
+                            <constraint firstItem="nJk-JY-al1" firstAttribute="top" secondItem="VFe-m0-dv0" secondAttribute="bottom" constant="28" id="Pjv-e3-gXG"/>
+                            <constraint firstItem="m1b-Pe-nUh" firstAttribute="top" secondItem="ay6-MX-3yX" secondAttribute="bottom" constant="16" id="TbP-qd-QqU"/>
+                            <constraint firstItem="RMG-mg-1n4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="UiE-hT-9tM"/>
+                            <constraint firstItem="ay6-MX-3yX" firstAttribute="top" secondItem="Usf-9k-EYO" secondAttribute="bottom" constant="16" id="W8D-R9-g9t"/>
+                            <constraint firstItem="VFe-m0-dv0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="XvT-Sw-3Iu"/>
                             <constraint firstAttribute="trailing" secondItem="VFe-m0-dv0" secondAttribute="trailing" constant="16" id="Yg1-s3-pR5"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="EEs-Lc-4oY" secondAttribute="bottom" constant="16" id="cV8-Ij-Pij"/>
-                            <constraint firstItem="IA1-PQ-mRz" firstAttribute="top" secondItem="Lct-tB-qYC" secondAttribute="bottom" constant="48" id="iBE-1t-Ft6"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EEs-Lc-4oY" secondAttribute="trailing" constant="16" id="ler-1N-gGX"/>
-                            <constraint firstItem="UAd-5Q-AqK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="qLF-q2-tbs"/>
-                            <constraint firstItem="Lct-tB-qYC" firstAttribute="top" secondItem="VFe-m0-dv0" secondAttribute="bottom" constant="52" id="xmS-iG-kUA"/>
-                            <constraint firstItem="EEs-Lc-4oY" firstAttribute="top" secondItem="UAd-5Q-AqK" secondAttribute="bottom" constant="46" id="ybp-07-Lb1"/>
+                            <constraint firstItem="VFe-m0-dv0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="a1g-ZY-22f"/>
+                            <constraint firstItem="RMG-mg-1n4" firstAttribute="top" secondItem="nJk-JY-al1" secondAttribute="bottom" constant="16" id="jFZ-AB-7sL"/>
+                            <constraint firstItem="nJk-JY-al1" firstAttribute="leading" secondItem="VFe-m0-dv0" secondAttribute="leading" id="jlV-lX-qN7"/>
+                            <constraint firstItem="Usf-9k-EYO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="mnO-kg-qdN"/>
+                            <constraint firstItem="Usf-9k-EYO" firstAttribute="top" secondItem="RMG-mg-1n4" secondAttribute="bottom" constant="16" id="wKM-yi-Tw0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Verification" id="5el-eQ-l2o">
@@ -87,18 +95,26 @@ check your inbox.</string>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="otpTexfield" destination="nJk-JY-al1" id="P8H-yZ-JiC"/>
+                        <outlet property="resendButton" destination="ay6-MX-3yX" id="lsQ-Id-5hs"/>
+                        <outlet property="subtitleLabel" destination="Usf-9k-EYO" id="Dhg-8R-0MS"/>
+                        <outlet property="timer" destination="RMG-mg-1n4" id="PVu-pW-Rdq"/>
+                        <outlet property="titleLabel" destination="VFe-m0-dv0" id="rws-na-x5r"/>
+                        <outlet property="verifyButton" destination="m1b-Pe-nUh" id="xTd-Wl-FXl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-2"/>
+            <point key="canvasLocation" x="113.74045801526717" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <designables>
-        <designable name="EEs-Lc-4oY">
-            <size key="intrinsicContentSize" width="50" height="34"/>
-        </designable>
-        <designable name="UAd-5Q-AqK">
+        <designable name="ay6-MX-3yX">
             <size key="intrinsicContentSize" width="283" height="31"/>
+        </designable>
+        <designable name="m1b-Pe-nUh">
+            <size key="intrinsicContentSize" width="50" height="34"/>
         </designable>
     </designables>
     <resources>

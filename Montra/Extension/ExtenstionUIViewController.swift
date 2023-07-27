@@ -28,11 +28,12 @@ extension UIViewController {
         navigationController?.pushViewController(ViewController, animated: true)
     }
     
-    func showVerificationViewController() {
+    func showVerificationViewController(email: String) {
         let storyboard = UIStoryboard(name: "Verification", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "verification")
+        let viewController = storyboard.instantiateViewController(withIdentifier: "verification") as! VerificationViewController
         
         navigationController?.pushViewController(viewController, animated: true)
+        viewController.email = email
     }
 
     func showForgotPasswordViewController() {
