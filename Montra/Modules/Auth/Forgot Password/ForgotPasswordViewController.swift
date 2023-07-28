@@ -9,6 +9,8 @@ import UIKit
 
 class ForgotPasswordViewController: UIViewController {
 
+    @IBOutlet weak var emailTextfield: InputTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,4 +20,16 @@ class ForgotPasswordViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    
+    @IBAction func continueButtonPressed(_ sender: Any) {
+        continueResetPassword()
+    }
+    
+    func continueResetPassword() {
+        guard let email = emailTextfield.text, email.isEmail else {
+            showErrorAlert(message: "Email is not valid, Please Check Again!")
+            return
+        }
+        showContinueForgotPasswordViewController(email: email)
+    }
 }

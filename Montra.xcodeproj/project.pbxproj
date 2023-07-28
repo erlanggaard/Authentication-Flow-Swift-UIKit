@@ -33,6 +33,7 @@
 		6288DF2E2A5AD81D008C78D9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6288DF2D2A5AD81D008C78D9 /* SignUpViewController.swift */; };
 		62929FB42A67BDA600230C0B /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */; };
 		62929FB62A67BDC700230C0B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */; };
+		62C8E7772A73C40800A6787A /* ContinueResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E7762A73C40800A6787A /* ContinueResetViewController.swift */; };
 		62D865302A5C223400A9C69B /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8652F2A5C223400A9C69B /* InputTextField.swift */; };
 		62F1D4112A72B22B008F0A73 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1D4102A72B22B008F0A73 /* TimeIntervalExtension.swift */; };
 		62FD30DE2A6971030046FF5C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62FD30DD2A6971030046FF5C /* IQKeyboardManagerSwift */; };
@@ -90,6 +91,7 @@
 		6288DF2D2A5AD81D008C78D9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		62C8E7762A73C40800A6787A /* ContinueResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueResetViewController.swift; sourceTree = "<group>"; };
 		62D8652F2A5C223400A9C69B /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		62F1D4102A72B22B008F0A73 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		62FEC3C72A66EEA50075FF57 /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			children = (
 				62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */,
 				62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */,
+				62C8E7762A73C40800A6787A /* ContinueResetViewController.swift */,
 			);
 			path = "Forgot Password";
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				6288DF2E2A5AD81D008C78D9 /* SignUpViewController.swift in Sources */,
 				623D2DC62A59B557002AFB4F /* OnboardingViewController.swift in Sources */,
 				62FEC3CA2A66EED20075FF57 /* VerificationViewController.swift in Sources */,
+				62C8E7772A73C40800A6787A /* ContinueResetViewController.swift in Sources */,
 				624CD5A62A5EEFA600364894 /* CheckButton.swift in Sources */,
 				623D2DCB2A59E39E002AFB4F /* OnboardingCollectionViewCell.swift in Sources */,
 			);

@@ -43,4 +43,13 @@ extension UIViewController {
         navigationController?.pushViewController(ViewController, animated: true)
     }
     
+    func showContinueForgotPasswordViewController(email: String) {
+        let storyboard = UIStoryboard(name: "ForgotPassword", bundle: nil)
+        let ViewController = storyboard.instantiateViewController(withIdentifier: "continueReset") as! ContinueResetViewController
+        
+        ViewController.email = email
+        
+        navigationController?.pushViewController(ViewController, animated: true)
+    }
+    
 }
