@@ -49,9 +49,12 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wHi-fA-Cj3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlP-Ar-OI8" customClass="TextButton" customModule="Montra" customModuleProvider="target">
-                                <rect key="frame" x="121" y="423" width="151" height="34"/>
+                                <rect key="frame" x="121" y="423" width="151" height="33.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Forgot Password?"/>
@@ -60,16 +63,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="neN-cN-dFR">
-                                <rect key="frame" x="65" y="493" width="263.33333333333331" height="30"/>
+                                <rect key="frame" x="62.333333333333343" y="492.33333333333331" width="268.33333333333326" height="30.999999999999943"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Have an Account yet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72u-is-T87">
-                                        <rect key="frame" x="0.0" y="0.0" width="205.33333333333334" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="205.33333333333334" height="31"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                         <color key="textColor" name="Light20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJO-Om-cnw" customClass="UnderlineButton" customModule="Montra" customModuleProvider="target">
-                                        <rect key="frame" x="209.33333333333331" y="0.0" width="54" height="30"/>
+                                        <rect key="frame" x="209.33333333333334" y="0.0" width="59.000000000000028" height="31"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
@@ -115,19 +118,19 @@
     </scenes>
     <designables>
         <designable name="4mw-b7-Ds0">
-            <size key="intrinsicContentSize" width="38" height="30"/>
+            <size key="intrinsicContentSize" width="46" height="34"/>
         </designable>
         <designable name="9mH-L1-slq">
-            <size key="intrinsicContentSize" width="34.666666666666664" height="18.666666666666668"/>
+            <size key="intrinsicContentSize" width="66.666666666666671" height="18.666666666666668"/>
         </designable>
         <designable name="IJO-Om-cnw">
-            <size key="intrinsicContentSize" width="54" height="30"/>
+            <size key="intrinsicContentSize" width="59" height="31"/>
         </designable>
         <designable name="R7h-YO-WR9">
-            <size key="intrinsicContentSize" width="62.333333333333336" height="17"/>
+            <size key="intrinsicContentSize" width="126.33333333333333" height="17"/>
         </designable>
         <designable name="RlP-Ar-OI8">
-            <size key="intrinsicContentSize" width="151" height="34"/>
+            <size key="intrinsicContentSize" width="151" height="33.333333333333336"/>
         </designable>
     </designables>
     <resources>

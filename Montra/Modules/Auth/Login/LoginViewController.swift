@@ -24,6 +24,10 @@ class LoginViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    @IBAction func loginButtonPressed(_ sender: Any) {
+        login()
+    }
+    
     @IBAction func signUpButtonPressed(_ sender: Any) {
         showSignUpViewController()
     }
@@ -41,5 +45,21 @@ class LoginViewController: UIViewController {
             self.passwordTextField.isSecureTextEntry = !self.passwordTextField.isSecureTextEntry
         }
     }
+    
+    func login() {
+        let email = emailTextField.text ?? ""
+        let pass = passwordTextField.text ?? ""
+        AuthRepository.shared.login(email: email, password: pass) { [weak self] (error) in
+            if let error = error {
+                self?.showErrorAlert(message: "Email atau Password salah!")
+            }
+            else {
+                self?.showAlert(title: "Login", message: "Login Success!")
+            }
+        }
+    }
+    
+    
+    
 }
 

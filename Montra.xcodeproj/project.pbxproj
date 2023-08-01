@@ -34,6 +34,12 @@
 		62929FB42A67BDA600230C0B /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */; };
 		62929FB62A67BDC700230C0B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */; };
 		62C8E7772A73C40800A6787A /* ContinueResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E7762A73C40800A6787A /* ContinueResetViewController.swift */; };
+		62C8E77A2A73F65700A6787A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 62C8E7792A73F65700A6787A /* Alamofire */; };
+		62C8E77C2A73F68300A6787A /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E77B2A73F68200A6787A /* LoginRequest.swift */; };
+		62C8E77E2A73FB1D00A6787A /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E77D2A73FB1D00A6787A /* AccessToken.swift */; };
+		62C8E7822A7404A100A6787A /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E7812A7404A100A6787A /* AuthRepository.swift */; };
+		62C8E7842A7404B000A6787A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E7832A7404B000A6787A /* ApiService.swift */; };
+		62CF49E42A792E37007FC196 /* TestApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF49E32A792E37007FC196 /* TestApiService.swift */; };
 		62D865302A5C223400A9C69B /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8652F2A5C223400A9C69B /* InputTextField.swift */; };
 		62F1D4112A72B22B008F0A73 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1D4102A72B22B008F0A73 /* TimeIntervalExtension.swift */; };
 		62FD30DE2A6971030046FF5C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62FD30DD2A6971030046FF5C /* IQKeyboardManagerSwift */; };
@@ -92,6 +98,11 @@
 		62929FB32A67BDA600230C0B /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		62929FB52A67BDC700230C0B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		62C8E7762A73C40800A6787A /* ContinueResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueResetViewController.swift; sourceTree = "<group>"; };
+		62C8E77B2A73F68200A6787A /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		62C8E77D2A73FB1D00A6787A /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		62C8E7812A7404A100A6787A /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		62C8E7832A7404B000A6787A /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		62CF49E32A792E37007FC196 /* TestApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiService.swift; sourceTree = "<group>"; };
 		62D8652F2A5C223400A9C69B /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		62F1D4102A72B22B008F0A73 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		62FEC3C72A66EEA50075FF57 /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
@@ -106,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62FD30DE2A6971030046FF5C /* IQKeyboardManagerSwift in Frameworks */,
+				62C8E77A2A73F65700A6787A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +170,8 @@
 		623D2D902A59B3A2002AFB4F /* Montra */ = {
 			isa = PBXGroup;
 			children = (
+				62C8E7802A74048E00A6787A /* Network */,
+				62C8E77F2A74048400A6787A /* Repositories */,
 				62FEC3CB2A66F6C10075FF57 /* Extension */,
 				6288DF242A5AB6F9008C78D9 /* Views */,
 				623D2DC72A59E07A002AFB4F /* Models */,
@@ -177,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				623D2DA82A59B3A4002AFB4F /* MontraTests.swift */,
+				62CF49E32A792E37007FC196 /* TestApiService.swift */,
 			);
 			path = MontraTests;
 			sourceTree = "<group>";
@@ -213,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				623D2DC82A59E089002AFB4F /* Onboarding.swift */,
+				62C8E77B2A73F68200A6787A /* LoginRequest.swift */,
+				62C8E77D2A73FB1D00A6787A /* AccessToken.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,6 +304,22 @@
 			path = "Forgot Password";
 			sourceTree = "<group>";
 		};
+		62C8E77F2A74048400A6787A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				62C8E7812A7404A100A6787A /* AuthRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		62C8E7802A74048E00A6787A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				62C8E7832A7404B000A6787A /* ApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		62FEC3CB2A66F6C10075FF57 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +348,7 @@
 			name = Montra;
 			packageProductDependencies = (
 				62FD30DD2A6971030046FF5C /* IQKeyboardManagerSwift */,
+				62C8E7792A73F65700A6787A /* Alamofire */,
 			);
 			productName = Montra;
 			productReference = 623D2D8E2A59B3A2002AFB4F /* Montra.app */;
@@ -390,6 +424,7 @@
 			mainGroup = 623D2D852A59B3A2002AFB4F;
 			packageReferences = (
 				62FD30DC2A6971030046FF5C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				62C8E7782A73F65700A6787A /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 623D2D8F2A59B3A2002AFB4F /* Products */;
 			projectDirPath = "";
@@ -442,12 +477,14 @@
 				627A97EC2A67A8EA008DB7CA /* LoginViewController.swift in Sources */,
 				62D865302A5C223400A9C69B /* InputTextField.swift in Sources */,
 				627D265E2A6039680056B08B /* UnderlineButton.swift in Sources */,
+				62C8E7822A7404A100A6787A /* AuthRepository.swift in Sources */,
 				624C36842A65A7F400924413 /* TextButton.swift in Sources */,
 				624CD5A82A5EF59600364894 /* GhostButton.swift in Sources */,
 				6214609C2A6AAB55000E83CE /* OtpTextField.swift in Sources */,
 				62FEC3CD2A66F6D90075FF57 /* StringExtension.swift in Sources */,
 				62F1D4112A72B22B008F0A73 /* TimeIntervalExtension.swift in Sources */,
 				623D2D962A59B3A2002AFB4F /* ViewController.swift in Sources */,
+				62C8E77C2A73F68300A6787A /* LoginRequest.swift in Sources */,
 				62929FB62A67BDC700230C0B /* ForgotPasswordViewController.swift in Sources */,
 				623D2D922A59B3A2002AFB4F /* AppDelegate.swift in Sources */,
 				623D2DC92A59E089002AFB4F /* Onboarding.swift in Sources */,
@@ -457,10 +494,12 @@
 				62FEC3CF2A66F82B0075FF57 /* ExtenstionUIViewController.swift in Sources */,
 				6288DF2E2A5AD81D008C78D9 /* SignUpViewController.swift in Sources */,
 				623D2DC62A59B557002AFB4F /* OnboardingViewController.swift in Sources */,
+				62C8E7842A7404B000A6787A /* ApiService.swift in Sources */,
 				62FEC3CA2A66EED20075FF57 /* VerificationViewController.swift in Sources */,
 				62C8E7772A73C40800A6787A /* ContinueResetViewController.swift in Sources */,
 				624CD5A62A5EEFA600364894 /* CheckButton.swift in Sources */,
 				623D2DCB2A59E39E002AFB4F /* OnboardingCollectionViewCell.swift in Sources */,
+				62C8E77E2A73FB1D00A6787A /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62CF49E42A792E37007FC196 /* TestApiService.swift in Sources */,
 				623D2DA92A59B3A4002AFB4F /* MontraTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -821,6 +861,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		62C8E7782A73F65700A6787A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 		62FD30DC2A6971030046FF5C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
@@ -832,6 +880,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		62C8E7792A73F65700A6787A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62C8E7782A73F65700A6787A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		62FD30DD2A6971030046FF5C /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 62FD30DC2A6971030046FF5C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
