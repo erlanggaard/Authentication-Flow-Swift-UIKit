@@ -17,6 +17,15 @@
         "revision" : "ea08e08958890043019d248065fe3d825f338087",
         "version" : "6.5.12"
       }
+    },
+    {
+      "identity" : "valet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Square/Valet",
+      "state" : {
+        "revision" : "89f12b93553055f4908c0d2548c9b8655926940a",
+        "version" : "4.2.0"
+      }
     }
   ],
   "version" : 2

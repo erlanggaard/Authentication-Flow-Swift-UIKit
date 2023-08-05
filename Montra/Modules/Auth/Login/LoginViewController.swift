@@ -19,9 +19,22 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let at = AccessTokenRepository.shared.accessToken
+        if at != nil {
+            print("USER HAS LOGGED IN!")
+        } else {
+            print("User Not Login")
+        }
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
@@ -49,6 +62,7 @@ class LoginViewController: UIViewController {
     func login() {
         let email = emailTextField.text ?? ""
         let pass = passwordTextField.text ?? ""
+        
         AuthRepository.shared.login(email: email, password: pass) { [weak self] (error) in
             if let error = error {
                 self?.showErrorAlert(message: "Email atau Password salah!")

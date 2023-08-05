@@ -9,6 +9,7 @@ import Foundation
 
 // Request
 // Encodable -> Protocol untuk convert objek menjadi data, dimana data digunakan untuk request
+
 struct LoginRequest: Encodable {
     let email: String
     let password: String

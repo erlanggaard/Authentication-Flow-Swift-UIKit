@@ -26,6 +26,7 @@ class ApiService {
     // LOGIN
     func login(request:LoginRequest, completion: @escaping (Result<AccessToken, Error>) -> Void) {
         let fullUrl = "\(BASE_URL)/api/v1/auth/login"
+        
         sessionManager.request(fullUrl, method: .post, parameters: request)
             .validate()
             .responseDecodable(of: AccessToken.self) { response in

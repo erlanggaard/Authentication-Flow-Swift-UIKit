@@ -18,6 +18,7 @@ class AuthRepository {
             switch result {
             case .success(let accessToken):
                 // TODO: Save access Token
+                AccessTokenRepository.shared.accessToken = accessToken
                 completion(nil)
                 
             case .failure(let error):

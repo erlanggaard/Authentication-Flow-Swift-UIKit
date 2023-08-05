@@ -24,6 +24,8 @@
 		624C36842A65A7F400924413 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C36832A65A7F400924413 /* TextButton.swift */; };
 		624CD5A62A5EEFA600364894 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CD5A52A5EEFA600364894 /* CheckButton.swift */; };
 		624CD5A82A5EF59600364894 /* GhostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CD5A72A5EF59600364894 /* GhostButton.swift */; };
+		62554D1B2A7E28A800828F00 /* Valet in Frameworks */ = {isa = PBXBuildFile; productRef = 62554D1A2A7E28A800828F00 /* Valet */; };
+		625FCEB82A7E324C00493D09 /* AccessTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625FCEB72A7E324C00493D09 /* AccessTokenRepository.swift */; };
 		627A97EA2A67A8D6008DB7CA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627A97E92A67A8D6008DB7CA /* Login.storyboard */; };
 		627A97EC2A67A8EA008DB7CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627A97EB2A67A8EA008DB7CA /* LoginViewController.swift */; };
 		627D265E2A6039680056B08B /* UnderlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D265D2A6039680056B08B /* UnderlineButton.swift */; };
@@ -39,7 +41,7 @@
 		62C8E77E2A73FB1D00A6787A /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E77D2A73FB1D00A6787A /* AccessToken.swift */; };
 		62C8E7822A7404A100A6787A /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E7812A7404A100A6787A /* AuthRepository.swift */; };
 		62C8E7842A7404B000A6787A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8E7832A7404B000A6787A /* ApiService.swift */; };
-		62CF49E42A792E37007FC196 /* TestApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF49E32A792E37007FC196 /* TestApiService.swift */; };
+		62CF49E42A792E37007FC196 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CF49E32A792E37007FC196 /* ApiServiceTests.swift */; };
 		62D865302A5C223400A9C69B /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D8652F2A5C223400A9C69B /* InputTextField.swift */; };
 		62F1D4112A72B22B008F0A73 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F1D4102A72B22B008F0A73 /* TimeIntervalExtension.swift */; };
 		62FD30DE2A6971030046FF5C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62FD30DD2A6971030046FF5C /* IQKeyboardManagerSwift */; };
@@ -88,6 +90,7 @@
 		624C36832A65A7F400924413 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 		624CD5A52A5EEFA600364894 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		624CD5A72A5EF59600364894 /* GhostButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostButton.swift; sourceTree = "<group>"; };
+		625FCEB72A7E324C00493D09 /* AccessTokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenRepository.swift; sourceTree = "<group>"; };
 		627A97E92A67A8D6008DB7CA /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		627A97EB2A67A8EA008DB7CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		627D265D2A6039680056B08B /* UnderlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineButton.swift; sourceTree = "<group>"; };
@@ -102,7 +105,7 @@
 		62C8E77D2A73FB1D00A6787A /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
 		62C8E7812A7404A100A6787A /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		62C8E7832A7404B000A6787A /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		62CF49E32A792E37007FC196 /* TestApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiService.swift; sourceTree = "<group>"; };
+		62CF49E32A792E37007FC196 /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
 		62D8652F2A5C223400A9C69B /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		62F1D4102A72B22B008F0A73 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		62FEC3C72A66EEA50075FF57 /* Verification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Verification.storyboard; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62554D1B2A7E28A800828F00 /* Valet in Frameworks */,
 				62FD30DE2A6971030046FF5C /* IQKeyboardManagerSwift in Frameworks */,
 				62C8E77A2A73F65700A6787A /* Alamofire in Frameworks */,
 			);
@@ -191,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				623D2DA82A59B3A4002AFB4F /* MontraTests.swift */,
-				62CF49E32A792E37007FC196 /* TestApiService.swift */,
+				62CF49E32A792E37007FC196 /* ApiServiceTests.swift */,
 			);
 			path = MontraTests;
 			sourceTree = "<group>";
@@ -308,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				62C8E7812A7404A100A6787A /* AuthRepository.swift */,
+				625FCEB72A7E324C00493D09 /* AccessTokenRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 			packageProductDependencies = (
 				62FD30DD2A6971030046FF5C /* IQKeyboardManagerSwift */,
 				62C8E7792A73F65700A6787A /* Alamofire */,
+				62554D1A2A7E28A800828F00 /* Valet */,
 			);
 			productName = Montra;
 			productReference = 623D2D8E2A59B3A2002AFB4F /* Montra.app */;
@@ -425,6 +431,7 @@
 			packageReferences = (
 				62FD30DC2A6971030046FF5C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				62C8E7782A73F65700A6787A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				62554D192A7E28A800828F00 /* XCRemoteSwiftPackageReference "Valet" */,
 			);
 			productRefGroup = 623D2D8F2A59B3A2002AFB4F /* Products */;
 			projectDirPath = "";
@@ -492,6 +499,7 @@
 				6288DF282A5ABBB8008C78D9 /* SecondaryButton.swift in Sources */,
 				6288DF262A5AB71B008C78D9 /* PrimaryButton.swift in Sources */,
 				62FEC3CF2A66F82B0075FF57 /* ExtenstionUIViewController.swift in Sources */,
+				625FCEB82A7E324C00493D09 /* AccessTokenRepository.swift in Sources */,
 				6288DF2E2A5AD81D008C78D9 /* SignUpViewController.swift in Sources */,
 				623D2DC62A59B557002AFB4F /* OnboardingViewController.swift in Sources */,
 				62C8E7842A7404B000A6787A /* ApiService.swift in Sources */,
@@ -507,7 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62CF49E42A792E37007FC196 /* TestApiService.swift in Sources */,
+				62CF49E42A792E37007FC196 /* ApiServiceTests.swift in Sources */,
 				623D2DA92A59B3A4002AFB4F /* MontraTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -861,6 +869,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		62554D192A7E28A800828F00 /* XCRemoteSwiftPackageReference "Valet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Square/Valet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		62C8E7782A73F65700A6787A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -880,6 +896,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		62554D1A2A7E28A800828F00 /* Valet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62554D192A7E28A800828F00 /* XCRemoteSwiftPackageReference "Valet" */;
+			productName = Valet;
+		};
 		62C8E7792A73F65700A6787A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 62C8E7782A73F65700A6787A /* XCRemoteSwiftPackageReference "Alamofire" */;

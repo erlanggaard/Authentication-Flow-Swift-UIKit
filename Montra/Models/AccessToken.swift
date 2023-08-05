@@ -9,9 +9,15 @@ import Foundation
 
 // Response
 // Decodable -> Protocol untuk mapping dari json/data ke object
+
 struct AccessToken: Decodable {
     let accessToken: String
     let refreshToken: String
+    
+    init(accessToken: String, refreshToken: String) {
+        self.accessToken = accessToken
+        self.refreshToken = refreshToken
+    }
     
     enum CodingKeys: String, CodingKey {
         case accessToken = "access_token"
