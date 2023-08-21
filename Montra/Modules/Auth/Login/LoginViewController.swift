@@ -26,17 +26,6 @@ class LoginViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let at = AccessTokenRepository.shared.accessToken
-        if at != nil {
-            print("USER HAS LOGGED IN!")
-        } else {
-            print("User Not Login")
-        }
-    }
-    
     @IBAction func loginButtonPressed(_ sender: Any) {
         login()
     }
@@ -68,7 +57,15 @@ class LoginViewController: UIViewController {
                 self?.showErrorAlert(message: "Email atau Password salah!")
             }
             else {
-                self?.showAlert(title: "Login", message: "Login Success!")
+                UserRepository.shared.getProfile { (result) in
+                    switch result {
+                    case .success(let user):
+                        self?.showAlert(title: "Get Profile", message: "Get Profile Success")
+                    case .failure(let error):
+                        self?.showErrorAlert(message: error.localizedDescription)
+                    }
+                }
+//                self?.showAlert(title: "Login", message: "Login Success!")
             }
         }
     }

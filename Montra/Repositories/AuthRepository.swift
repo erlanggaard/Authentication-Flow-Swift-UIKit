@@ -26,4 +26,16 @@ class AuthRepository {
             }
         }
     }
+    
+    func refreshToken(_ refreshToken: String, completion: @escaping (Error?) -> Void) {
+        ApiService.shared.refreshToken(refreshToken) { result in
+            switch result {
+            case .success(let accessToken):
+                AccessTokenRepository.shared.accessToken = accessToken
+                completion(nil)
+            case .failure(let error):
+                completion(error)
+            }
+        }
+    }
 }
